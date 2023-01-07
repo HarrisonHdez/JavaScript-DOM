@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <!--* Use addEventListener para agregar varios event listeners a un elemento del DOM. -->
+
+  <button id="button">Haz clic aquí</button>
+
+  <script>
+
+    let button = document.querySelector("#button");
+
+    button.addEventListener('click', () => {
+      console.log('Boton Clikeado!!!');
+    });
+
+    button.addEventListener('mouseenter', () => {
+      console.log('El mouse esta sobre el boton');
+    });
+    
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- let element = document.getElementById("mi-elemento");
+
+element.addEventListener("click", () => {
+  console.log("Elemento clickeado!");
+}); -->
