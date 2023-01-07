@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <!--* Use getElementByClass para obtener una lista de elementos del DOM y luego modifique el contenido de cada uno de ellos usando innerHTML. -->
+
+  <h1 class="title">TITULO ORIGINAL</h1>
+  <h2 class="title">TITULO ORIGINAL</h2>
+  <h3 class="title">TITULO ORIGINAL</h3>
+  <h4 class="title">TITULO ORIGINAL</h4>
+  <h5 class="title">TITULO ORIGINAL</h5>
+  <h6 class="title">TITULO ORIGINAL</h6>
+
+  <script>
+    let element = document.getElementsByClassName('title');
+
+    for( let i = 0; i < element.length; i++ ) {
+      element[i].innerHTML = 'NUEVO TITULO!!!'
+    }
+    
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- let element = document.getElementById("mi-elemento");
+
+element.addEventListener("click", () => {
+  console.log("Elemento clickeado!");
+}); -->
