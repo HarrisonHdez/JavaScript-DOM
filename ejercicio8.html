@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <!--* Utiliza getElementsByTagName para seleccionar todos los elementos de tipo "p" y cambia el tamaño de su fuente a 20px. -->
+
+  
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  <p>Hola Mundo</p>
+  
+
+  <script>
+
+    let paragraph = document.getElementsByTagName('p');
+    
+    for(let i = 0; i < paragraph.length; i++) {
+      paragraph[i].style.fontSize = '20px';
+      paragraph[i].style.color = 'white';
+      paragraph[i].style.textAlign = 'center';
+      paragraph[i].style.fontWeight = 'bold';
+      paragraph[i].style.backgroundColor = 'blue';
+      paragraph[i].style.marginTop = '10px';
+      paragraph[i].style.marginTop = '10px';
+    }
+   
+   
+  </script>
+</body>
+</html>
