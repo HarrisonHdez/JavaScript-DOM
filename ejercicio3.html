@@ -10,18 +10,25 @@
   <body>
   <!--* Use getElementByClass para obtener una lista de elementos del DOM y luego modifique el contenido de cada uno de ellos usando innerHTML. -->
 
-  <h1 class="title">TITULO ORIGINAL</h1>
-  <h2 class="title">TITULO ORIGINAL</h2>
-  <h3 class="title">TITULO ORIGINAL</h3>
-  <h4 class="title">TITULO ORIGINAL</h4>
-  <h5 class="title">TITULO ORIGINAL</h5>
-  <h6 class="title">TITULO ORIGINAL</h6>
+  <h1 class="mainTitle" id="title">TITULO ORIGINAL</h1>
+  <h2 class="mainTitle" id="title">TITULO ORIGINAL</h2>
+  <h3 class="mainTitle" id="title">TITULO ORIGINAL</h3>
+  <h4 class="mainTitle" id="title">TITULO ORIGINAL</h4>
+  <h5 class="mainTitle" id="title">TITULO ORIGINAL</h5>
+  <h6 class="mainTitle" id="title">TITULO ORIGINAL</h6>
 
   <script>
-    let element = document.getElementsByClassName('title');
+    // let title = document.getElementById('title');
+    // title.style.color = 'red';
+    // title.style.backgroundColor = 'blue';
 
-    for( let i = 0; i < element.length; i++ ) {
-      element[i].innerHTML = 'NUEVO TITULO!!!'
+    let mainTitle = document.getElementsByClassName('mainTitle');
+    
+
+    for(let i = 0; i < mainTitle.length; i++) {
+      mainTitle[i].innerHTML = 'NUEVO TITULO'
+      mainTitle[i] .style.color = 'red';
+      mainTitle[i].style.backgroundColor = 'blue';
     }
     
   </script>

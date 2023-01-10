@@ -13,17 +13,17 @@
   <button id="button">Haz clic aquí</button>
 
   <script>
-
-    let button = document.querySelector("#button");
-
-    button.addEventListener('click', () => {
-      console.log('Boton Clikeado!!!');
-    });
-
-    button.addEventListener('mouseenter', () => {
-      console.log('El mouse esta sobre el boton');
-    });
+    let button = document.getElementById("button");
     
+    button.addEventListener('click', () => {
+      console.log('boton clikeado');
+    });
+    button.addEventListener('mouseenter', () => {
+      console.log('el cursor ingreso en el boton');
+    });
+    button.addEventListener('mouseout', () => {
+      console.log('el cursor salio del boton');
+    });
   </script>
 </body>
 </html>
