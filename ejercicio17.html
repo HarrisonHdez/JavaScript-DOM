@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <!--* Utiliza hasAttribute para verificar si el elemento "img" tiene un atributo "alt". Si no tiene ese atributo, agrégalo con setAttribute. -->
+
+  <!--* sintaxis de hasAttribute -->
+  <!--* element.hasAttribute(name) -->
+  <!--? Donde element es un elemento del DOM (un objeto que representa un elemento HTML) y name es una cadena que representa el nombre del atributo que quieres comprobar si existe. -->
+
+
+  <img id="miImagen" src="img/imagen.jpg">
+
+  <script>
+
+    let imagen = document.querySelector('img');
+    
+    if (!imagen.hasAttribute('alt')) {
+      imagen.setAttribute('alt', 'Mi Imagen')
+    }
+
+    
+
+  </script>
+</body>
+</html>

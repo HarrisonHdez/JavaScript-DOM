@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+      ul {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+  <!--* Utiliza querySelector para seleccionar el primer elemento "li" en un elemento "ul" y cambia el color de su fuente a rojo. -->
+
+
+
+  <ul>
+    <li>Numero 1</li>
+    <li>Numero 2</li>
+    <li>Numero 3</li>
+    <li>Numero 4</li>
+    <li>Numero 5</li>
+  </ul>
+
+  <script>
+    let ul = document.querySelector('ul');
+    let firstLi = ul.querySelector('li');
+    firstLi.style.color = 'red';
+
+    // const ul = document.querySelector('ul');
+    // const lis = ul.querySelectorAll('li');
+    // for (const li of lis) {
+    //   li.style.color = 'red';
+    // }
+  </script>
+</body>
+</html>

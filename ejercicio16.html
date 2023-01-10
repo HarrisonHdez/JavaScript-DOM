@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <!--* Utiliza getAttribute para obtener el valor del atributo "src" del elemento "img" que modificaste en el ejercicio anterior y mostrarlo en la consola. -->
+
+  <!--? La sintaxis de getAttribute es la siguiente: -->
+  <!--? element.getAttribute(attribute); -->
+  <!--* "element" es el elemento HTML del que quieres obtener el valor del atributo -->
+  <!--* "attribute" es el nombre del atributo que quieres obtener. Por ejemplo: -->
+
+  <!--! obtener -->
+  <!--! get -->
+  <img id="miImagen" src="img/imagen.jpg">
+  <script>
+
+    let imagen = document.querySelector('img');
+    let attributeValue = imagen.getAttribute('src');
+    console.log( attributeValue );
+
+    
+  </script>
+</body>
+</html>
+    
