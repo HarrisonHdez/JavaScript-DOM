@@ -18,35 +18,15 @@
   <h6 class="mainTitle" id="title">TITULO ORIGINAL</h6>
 
   <script>
-    // let title = document.getElementById('title');
-    // title.style.color = 'red';
-    // title.style.backgroundColor = 'blue';
-
-    let mainTitle = document.getElementsByClassName('mainTitle');
-    
-
+    const mainTitle = document.querySelectorAll('.mainTitle');
     for(let i = 0; i < mainTitle.length; i++) {
       mainTitle[i].innerHTML = 'NUEVO TITULO'
-      mainTitle[i] .style.color = 'red';
-      mainTitle[i].style.backgroundColor = 'blue';
+      mainTitle[i].style.color = 'yellow'
+      mainTitle[i].style.fontFamily = 'Arial'
+      mainTitle[i].style.backgroundColor = 'blue'
+
     }
     
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-<!-- let element = document.getElementById("mi-elemento");
-
-element.addEventListener("click", () => {
-  console.log("Elemento clickeado!");
-}); -->

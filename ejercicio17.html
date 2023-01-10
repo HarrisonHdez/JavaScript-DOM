@@ -18,15 +18,19 @@
   <img id="miImagen" src="img/imagen.jpg">
 
   <script>
-
-    let imagen = document.querySelector('img');
-    
-    if (!imagen.hasAttribute('alt')) {
-      imagen.setAttribute('alt', 'Mi Imagen')
+    const img = document.querySelector('img');
+    if(!img.hasAttribute('alt')) {
+      img.setAttribute('alt', 'Mi Imagen')
     }
-
     
 
   </script>
 </body>
 </html>
+
+    let imagen = document.querySelector('img');
+    if (!imagen.hasAttribute('alt')) {
+      imagen.setAttribute('alt', 'Mi Imagen')
+    }
+
+    
