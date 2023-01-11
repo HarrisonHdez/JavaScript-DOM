@@ -15,9 +15,14 @@
   <script>
 
     const button = document.querySelector('#button');
+          button.style.backgroundColor = 'orange'
+          button.style.fontFamily = 'Arial';
+          button.innerHTML = 'Agregar al Carrito'
+
     button.addEventListener('click', () => {
-      console.log('Has dado un click');
+      alert("Agregado con exito")
     });
+
     
   </script>
 </body>
