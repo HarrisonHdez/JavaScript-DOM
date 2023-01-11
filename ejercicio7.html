@@ -11,20 +11,20 @@
   <!--* Utiliza getElementsByClassName para seleccionar todos los elementos con la clase "article-section" y cambia el color de su fuente a rojo. -->
 
   
-  <h1 class="article-section">Titulo de prueba</h1>
   <h2 class="article-section">Titulo de prueba</h2>
   <h3 class="article-section">Titulo de prueba</h3>
   <h4 class="article-section">Titulo de prueba</h4>
   <h5 class="article-section">Titulo de prueba</h5>
   <h6 class="article-section">Titulo de prueba</h6>
-  <h7 class="article-section">Titulo de prueba</h7>
   
 
   <script>
-    let articleSection = document.getElementsByClassName('article-section');
-    for(let i = 0 ; i < articleSection.length; i++) {
+    const articleSection = document.getElementsByClassName('article-section');
+    for(let i = 0; i < articleSection.length; i++) {
       articleSection[i].style.color = 'red'
-
+      articleSection[i].style.fontFamily = 'Arial';
+      articleSection[i].style.textAlign = 'center'
+      
     }
     
   </script>

@@ -13,14 +13,19 @@
   
   
   <script>
+    const div = document.createElement('div');
+    div.id = 'miDiv';
+    document.body.appendChild(div);
 
-    let nuevoDiv = document.createElement("div");
-    nuevoDiv.id = "miDiv";
-    document.body.appendChild(nuevoDiv);
-
-    let nuevoParrafo = document.createElement("p");
-    nuevoParrafo.id = 'miParrafo';
-    nuevoDiv.appendChild(nuevoParrafo);
+    const paragraph = document.createElement('p');
+    paragraph.id = 'miP';
+    div.appendChild(paragraph);
+    
+    paragraph.innerHTML = 'Este es el parrafo de bienvenida';
+    paragraph.style.color = 'white';
+    paragraph.style.fontFamily = 'Arial';
+    paragraph.style.textAlign = 'center';
+    
 
     
 
@@ -29,3 +34,4 @@
   </script>
 </body>
 </html>
+

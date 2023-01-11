@@ -14,16 +14,24 @@
   
   <script>
 
-    let nuevoDiv = document.createElement("div");
-    nuevoDiv.id = "miDiv"
-    document.body.appendChild(nuevoDiv);
+    const div = document.createElement('div');
+    div.id = 'miDiv'
+    document.body.appendChild(div);
     
+    const h1 = document.createElement('h1');
+    h1.id = 'miH1'
+    div.appendChild(h1)
+
+    h1.innerHTML = 'Hola Mundo'
+    h1.style.fontFamily = 'Arial'
+    h1.style.color = 'yellow'
     
     
 
   </script>
 </body>
 </html>
+
 
 
     
