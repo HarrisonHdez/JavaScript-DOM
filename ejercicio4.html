@@ -13,16 +13,19 @@
   <button id="button">Haz clic aquí</button>
 
   <script>
+
     const button = document.querySelector('#button');
-    button.addEventListener('click', () => {
-      console.log('Has dado Click');
-    });
+    
     button.addEventListener('mouseenter', () => {
-      console.log('Cursor sobre boton');
+      console.log('Cursor sobre el button');
+    });   
+    button.addEventListener('click', () => {
+      console.log('Button clikeado');
     });
     button.addEventListener('mouseout', () => {
-      console.log('Cursor fuera del boton');
+      console.log('Cursor fuera del button');
     });
+    
     
 
 
