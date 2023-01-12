@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--* Crea una página web con un formulario de inicio de sesión. El formulario debe tener dos campos de texto (nombre de usuario y contraseña) y un botón de inicio de sesión. Utiliza el DOM para obtener los valores de los campos de texto cuando el usuario haga clic en el botón de inicio de sesión y mostrarlos en una alerta. -->
+
+    <div class="container-form">
+
+        <form class="center-form">
+            <h1 class="sesion">Iniciar Sesion</h1>
+            <label>Nombre de usuario:</label>
+            <input type="text" id="username" placeholder="Usuario">
+            <br>
+            <label>Contraseña:</label>
+            <input type="password" id="password" placeholder="Contraseña">
+            <br>
+            <button type="button" onclick="submitForm()">Iniciar sesión</button>
+            <div class="alert" id="error-message"></div>
+            <div class="alert2" id="error-message2"></div>
+            <div class="aprovado" id="aprovado"></div>
+        </form>
+    </div>
+
+
+    <script>
+        const submitForm = () => {
+            const username = document.querySelector('#username').value;
+            const password = document.querySelector('#password').value;
+            const errorMessage = document.getElementById("error-message");
+            const errorMessage2 = document.getElementById("error-message2");
+            const aprovado = document.getElementById("aprovado");
+
+            if (username === "" || password === "") {
+                errorMessage.innerHTML = "Por favor, rellena todos los campos";
+                errorMessage.style.backgroundColor = 'red'
+                setTimeout(() => {
+                    errorMessage.innerHTML = '';
+                    errorMessage.style.backgroundColor = '';
+                }, 2000);
+            } else if ( username.length < 4 || password.length < 4) {
+                errorMessage2.innerHTML = "El usuario y la contraseña deben tener al menos 4 caracteres";
+                errorMessage2.style.backgroundColor = 'yellow'
+                errorMessage2.style.textAlign = 'center'
+                setTimeout(() => {
+                    errorMessage2.innerHTML = "";
+                }, 2000);
+            } else {
+                aprovado.innerHTML = 'Iniciando sesion...'
+                aprovado.style.backgroundColor = 'blue'
+                setTimeout(() => {
+                    aprovado.innerHTML = ''
+
+                }, 2000);
+            }
+        } 
+
+
+
+
+
+
+
+
+
+        // function submitForm() {
+        //     var username = document.getElementById("username").value;
+        //     var password = document.getElementById("password").value;
+        //     // var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        //     if (username == "" || password == "") {
+        //         alert("Por favor, rellena todos los campos");
+        //     } else if (username.length < 5 || password.length < 8) {
+        //         alert("El nombre de usuario debe tener al menos 5 caracteres y la contraseña al menos 8 caracteres");
+        //     } else if (!emailRegex.test(username)) {
+        //         alert("El nombre de usuario debe ser una dirección de correo electrónico válida");
+        //     } else {
+        //         alert("Nombre de usuario: " + username + "\nContraseña: " + password);
+        //     }
+        // }
+    </script>
+</body>
+</html>
