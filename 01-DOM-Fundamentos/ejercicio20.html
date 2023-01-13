@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--* Crea una función que agregue un elemento de lista a una lista existente en una página HTML. -->
+    <ul id="miLista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+  
+    <button onclick="addListItem('Nuevo item', 'miLista')">Agregar item</button>
+    <script>
+        const addListItem = (item, id) => {
+            const list = document.querySelector('#miLista');
+            const newItem = document.createElement('li');
+
+            newItem.innerText = item;
+            list.appendChild(newItem);
+         }
+        addListItem('Nuevo item', 'miLista');
+    </script>
+</body>
+</html>

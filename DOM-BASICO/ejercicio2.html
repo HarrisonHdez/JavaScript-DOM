@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--* Crea una página web con una tabla. La tabla debe tener cinco filas y tres columnas, y debe contener información ficticia sobre productos (nombre, precio, descripción). Utiliza el DOM para agregar una nueva fila a la tabla cuando el usuario haga clic en un botón "Agregar producto". -->
+
+    <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Producto 1</td>
+            <td>$10</td>
+            <td>Descripción del producto 1</td>
+          </tr>
+          <tr>
+            <td>Producto 2</td>
+            <td>$20</td>
+            <td>Descripción del producto 2</td>
+          </tr>
+          <!-- Agrega más filas aquí -->
+        </tbody>
+    </table>
+    <button id="addProductButton">Agregar producto</button>
+
+    <script>
+        const addProductButton = document.getElementById("addProductButton");
+        addProductButton.addEventListener("click", function() {
+        const tbody = document.querySelector("tbody");
+        const newRow = document.createElement("tr");
+        for (let i = 0; i < 3; i++) {
+            const newCell = document.createElement("td");
+            newCell.innerHTML = "Información del nuevo producto";
+            newRow.appendChild(newCell);
+        }
+        tbody.appendChild(newRow);
+        });
+
+    </script>
+
+
+</body>
+</html>
