@@ -15,14 +15,24 @@
         <option value="option4">Opción 4</option>
     </select>
     <script>
-        const select = document.querySelector('#mySelect');
-
-        const showSelectedValue = () => {
-            const selectedValue = select.value;
-            alert(`Valor seleccionado: ${selectedValue}`);
+        
+        const showSelectedValue = (element) => {
+            element.addEventListener("change", () => {
+                alert(`Valor seleccionado: ${element.value}`);
+            });
         }
+        const select = document.querySelector("#mySelect");
+        showSelectedValue(select);
 
-        select.addEventListener('change', showSelectedValue);
+
+        // const select = document.querySelector('#mySelect');
+
+        // const showSelectedValue = () => {
+        //     const selectedValue = select.value;
+        //     alert(`Valor seleccionado: ${selectedValue}`);
+        // }
+
+        // select.addEventListener('change', showSelectedValue);
     </script>
 </body>
 </html>

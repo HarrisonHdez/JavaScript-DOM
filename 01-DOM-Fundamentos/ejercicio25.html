@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--* Crea una función que cambie el color de fondo de un elemento en una página HTML al pasar el cursor sobre él. -->
+
+    <button id="button">Cambiar el color</button>
+
+    <script>
+        const changeBackgroundColor = (element) => {
+            element.addEventListener("mouseenter", () => {
+            element.style.backgroundColor = "red";
+            });
+            element.addEventListener("mouseout", () => {
+            element.style.backgroundColor = "";
+            });
+        }
+        const button = document.querySelector("button");
+        changeBackgroundColor(button);
+    </script>
+</body>
+</html>
