@@ -17,7 +17,11 @@
             element.addEventListener('click', () => {
                 const parrafo = document.createElement('p');
                 parrafo.textContent = 'Mensaje enviado';
+                parrafo.style.textAlign = 'center';
                 document.body.appendChild(parrafo);
+                setTimeout(() => {
+                    parrafo.textContent = '';
+                }, 2000);
             });
         }
         const button = document.querySelector('.button');
