@@ -12,13 +12,17 @@
 
   <button id="myDiv">Haz clic en mí</button>
   <script>
-    const button = document.querySelector('#myDiv');
-    button.addEventListener('click', () => {
-      button.classList.add('buttonWhite', 'buttonWhite:hover');
-      setTimeout(() => {
-        button.classList.remove('buttonWhite', 'buttonWhite:hover');
-      }, 1000);
-    });
+    const addClassOnClick = (element, className) => {
+      element.addEventListener('click', () => {
+        element.classList.add(className);
+        setTimeout(() => {
+          element.classList.remove(className);
+        }, 1000);
+      });
+    };
+    
+    const element = document.querySelector('#myDiv');
+    addClassOnClick(element, 'buttonWhite' );
     
   </script>
 </body>
