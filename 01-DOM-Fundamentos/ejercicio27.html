@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!--* Crea una función que agregue una clase CSS a un elemento al hacer clic en él. -->
+
+  <button id="myDiv">Haz clic en mí</button>
+  <script>
+    const button = document.querySelector('#myDiv');
+    button.addEventListener('click', () => {
+      button.classList.add('buttonWhite', 'buttonWhite:hover');
+      setTimeout(() => {
+        button.classList.remove('buttonWhite', 'buttonWhite:hover');
+      }, 1000);
+    });
+    
+  </script>
+</body>
+</html>
