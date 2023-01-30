@@ -10,9 +10,29 @@
 <body>
   <!--*   Crea una función que cambie la clase CSS de un elemento al hacer clic en él
  -->
-  <div id="myDiv" class="initialClass">Haz clic en mí</div>
+  <button id="myDiv" class="initialClass">Haz clic en mí</button>
   <script>
-        
+       
+
+        const cambiarColor = (button, className) => {
+          button.addEventListener('click', () => {
+            button.classList.add(className)
+          });
+        }
+        const button = document.querySelector('#myDiv');
+        cambiarColor( button , 'buttonWhite')
+
+        // const cambiarColor = (element, className) => {
+        //     element.addEventListener('click', () => {
+        //       element.classList.add(className)
+        //     });
+        //   }
+        //   const button = document.querySelector('#myDiv');
+        //   cambiarColor(button, 'newClass');
+        // const button = document.querySelector('#myButton');
+        //   button.addEventListener('click', () => {
+        //     button.classList.toggle('newClass');
+        // });
   </script>
 </body>
 </html>
