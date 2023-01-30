@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!--*   Crea una función que agregue una clase CSS a un elemento al pasar el cursor sobre él.
+ -->
+  <button id="myDiv" class="initialClass">Haz clic en mí</button>
+  <script>
+
+    const buttonHover = (button, className) => {
+      button.addEventListener('mouseover', () => {
+        button.classList.add(className);
+      });
+    }
+    const button = document.querySelector('#myDiv');
+    buttonHover( button, 'buttonWhite' ) 
+       
+    
+  </script>
+</body>
+</html>
